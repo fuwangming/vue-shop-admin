@@ -1,8 +1,8 @@
 import Vue from 'vue'
-import { Tree,Tag,MessageBox,Dialog,Pagination,Tooltip,Switch,TableColumn,Table,Col,Row,Option,Select,Card,BreadcrumbItem,Breadcrumb,Button,Form, FormItem,Input,Message,Container,Header,Aside,Main,Menu,Submenu,MenuItem } from 'element-ui'
+import { Cascader,Tree,Tag,MessageBox,Dialog,Pagination,Tooltip,Switch,TableColumn,Table,Col,Row,Option,Select,Card,BreadcrumbItem,Breadcrumb,Button,Form, FormItem,Input,Message,Container,Header,Aside,Main,Menu,Submenu,MenuItem } from 'element-ui'
 
 
-
+Vue.use(Cascader)
 Vue.use(Tree)
 Vue.use(Tag)
 Vue.use(Dialog)
