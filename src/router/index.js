@@ -8,6 +8,9 @@ import Rights from '../components/power/Rights.vue'
 import Roles from '../components/power/Roles.vue'
 import Cate from '../components/goods/Cate.vue'
 import Params from '../components/goods/Params.vue'
+import List from '../components/goods/List.vue'
+import Add from '../components/goods/Add.vue'
+
 
 
 Vue.use(VueRouter)
@@ -27,6 +30,8 @@ const router = new VueRouter({
         {path: '/roles',component: Roles},
         {path: '/categories',component: Cate},
         {path: '/params',component: Params},
+        {path: '/goods',component: List},
+        {path: '/goods/add',component: Add},
       ]}
   ]
 })
@@ -45,6 +50,18 @@ router.beforeEach((to,from,next) => {
   if(!tokenStr) return next('/login')
   next()
 
+})
+
+// 时间戳
+Vue.filter('dateFormat', function (originVal) {
+  const dt = new Date(originVal)
+  const y = dt.getFullYear()
+  const m = (dt.getMonth() + 1 + '').padStart(2, '0')
+  const d = (dt.getDate() + '').padStart(2, '0')
+  const hh = (dt.getHours() + '').padStart(2, '0')
+  const mm = (dt.getMinutes() + '').padStart(2, '0')
+  const ss = (dt.getSeconds() + '').padStart(2, '0')
+  return `${y}-${m}-${d} ${hh}:${mm}:${ss}`
 })
 
 
