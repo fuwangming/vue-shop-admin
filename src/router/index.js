@@ -15,6 +15,7 @@ import Report from '../components/report/Report.vue'
 
 
 
+
 Vue.use(VueRouter)
 
 
