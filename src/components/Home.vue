@@ -3,7 +3,7 @@
     <!-- 头布局 -->
     <el-header>
       <div>
-        <img src="../assets/home.png" alt="" />
+        <img src="../assets/logo.jpeg" alt="" />
         <span>电商后台管理系统</span>
       </div>
       <el-button @click="logoutbtn" type="info">退出</el-button>
