@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import router from './router'
+
 // import './plugins/element.js'
 //导入全局样式表
 import './assets/css/global.css'
@@ -13,6 +13,8 @@ import VueQuillEditor from 'vue-quill-editor'
 
 // 导入NProgress 对应的js和css
 import NProgress from 'nprogress'
+
+import router from './router'
 
 
 import axios from 'axios'
